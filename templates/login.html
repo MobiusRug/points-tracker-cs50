@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Entrar
+{% endblock %}
+
+{% block content %}
+    <div class="auth-form">
+        <h2 class="text-center mb-4">Entrar</h2>
+        
+        {# Exibir mensagens flash #}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} mb-3">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/login" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" 
+                       autofocus 
+                       class="form-control" 
+                       name="username" 
+                       placeholder="Usuário" 
+                       type="text"
+                       required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control" 
+                       name="password" 
+                       placeholder="Senha" 
+                       type="password"
+                       required>
+            </div>
+            <button class="btn btn-primary" type="submit" style="background-color: #0c326f; border-color: #0c326f;">Entrar</button>
+        </form>
+    </div>
+{% endblock %}
