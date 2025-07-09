@@ -66,18 +66,20 @@ This is where **Points Tracker** comes in — a digital solution designed to bri
 
 ## 🗂️ Project Structure
 
+<pre> 
 controle_pontos_project/
-├── app.py # Main Flask application
-├── helpers.py # Login decorator and utilities
-├── controle.db # SQLite database
+├── app.py                # Main Flask application
+├── helpers.py            # Login decorator and utilities
+├── controle.db           # SQLite database
 ├── static/
-│ ├── styles.css # Custom CSS
+│   └── styles.css        # Custom CSS
 ├── templates/
-│ ├── index.html # Main interface
-│ ├── login.html # Login form
-│ ├── register.html # Registration form
-├── README.md # This file
-└── requirements.txt # Dependencies (optional)
+│   ├── index.html        # Main interface
+│   ├── login.html        # Login form
+│   └── register.html     # Registration form
+├── README.md             # This file
+└── requirements.txt      # Dependencies (optional)
+ </pre>
 
 
 ---
