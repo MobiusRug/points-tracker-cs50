@@ -161,3 +161,4 @@ This project was inspired by a genuine productivity challenge faced in the Brazi
 **CS50x** has been an incredibly valuable learning journey, and this final project is a reflection of how foundational computer science concepts can be applied to personal and professional contexts.
 
 > “A small tool to solve a real-world problem in public service.”
+ edit
